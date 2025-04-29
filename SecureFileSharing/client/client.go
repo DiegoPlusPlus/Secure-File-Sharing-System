@@ -1,7 +1,5 @@
 package client
 
-// CS 161 Project 2
-
 // Only the following imports are allowed! ANY additional imports
 // may break the autograder!
 // - bytes
