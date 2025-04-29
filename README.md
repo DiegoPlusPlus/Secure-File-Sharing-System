@@ -4,12 +4,19 @@ Provided some cryptographic library functions, I used them to design a secure fi
 
 Functionality:
 InitUser: Given a new username and password, create a new user.
+
 GetUser: Given a username and password, let the user log in if the password is correct.
+
 User.StoreFile: For a logged-in user, given a filename and file contents, create a new file or overwrite an existing file.
+
 User.LoadFile: For a logged-in user, given a filename, fetch the corresponding file contents.
+
 User.AppendToFile: For a logged-in user, given a filename and additional file contents, append the additional file contents at the end of the existing file contents, while following some efficiency requirements.
+
 User.CreateInvitation: For a logged-in user, given a filename and target user, generate an invitation UUID that the target user can use to gain access to the file.
+
 User.AcceptInvitation: For a logged-in user, given an invitation UUID, obtain access to a file shared by a different user. Allow the recipient user to access the file using a (possibly different) filename of their own choosing.
+
 User.RevokeAccess: For a logged-in user, given a filename and target user, revoke the target user’s access so that they are no longer able to access a shared file.
 
 
